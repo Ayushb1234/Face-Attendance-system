@@ -66,14 +66,6 @@ Screenshots of the Project:
 └── README.md
 ```
 
-```yaml
-Copy code
-
----
-
-## ⚙️ Installation & Setup
-```
-
 ### 1️⃣ Clone Repo
 
 ```bash
@@ -83,25 +75,20 @@ cd face-attendance-system
 2️⃣ Backend Setup (FastAPI)
 
 ```bash
-Copy code
 cd backend
 pip install -r requirements.txt
 uvicorn app.main:app --reload
 Backend will run at:
 
-cpp
-Copy code
 http://127.0.0.1:8000
 Swagger Docs:
 
 arduino
-Copy code
 http://127.0.0.1:8000/docs
 ```
 3️⃣ Frontend Setup (React)
 
 ```bash
-Copy code
 cd ../frontend
 npm install
 npm run dev
@@ -138,14 +125,10 @@ Rahul, 2025-02-01, 10:05:17
 Run backend unit tests:
 ```
 
-bash
-Copy code
-pytest
-📦 Docker Support
-bash
-Copy code
-docker-compose up --build
+
 🛠️ Future Enhancements
+-------------------------
+
 📱 Mobile app support
 
 🔐 Role-based authentication
@@ -157,31 +140,18 @@ docker-compose up --build
 📈 Attendance analytics dashboard
 
 🤝 Contributing
+-------------------
+
 Pull requests are welcome!
 For major changes, please open an issue first.
 
 📄 License
+-----------
 MIT License
 
 👤 Author
+-----------
+
 Ayush Choudhary
 🚀 AI/ML Developer | Computer Vision Engineer
 🔗 GitHub · LinkedIn · Portfolio
-
-
-
-## Quick start (Docker)
-1) Copy `.env.example` to `.env` inside `backend/` and fill values.
-2) `docker compose up --build`
-3) Backend docs: http://localhost:8000/docs
-
-### Non-Docker (dev)
-- Python 3.11+, Node 20+
-- `cd backend && pip install -r requirements.txt && uvicorn app.main:app --reload`
-
-## Endpoints
-- `POST /enroll` (multipart: image + user_id)
-- `WS   /match/stream` (send base64 frames → match reply)
-- `GET  /attendance/export?date=today` (xlsx)
-
-> This repo is scaffolded to be readable and extendable. Tweak thresholds in `routers/match.py`.
