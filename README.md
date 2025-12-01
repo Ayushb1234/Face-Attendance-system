@@ -2,6 +2,12 @@
 
 Real-time face-recognition attendance with FastAPI (backend), InsightFace (ArcFace), Qdrant (vector search), Postgres (records), and a Next.js frontend.
 
+Screenshots of the Project:
+--------------------------
+<img width="1127" height="371" alt="image" src="https://github.com/user-attachments/assets/5cbc5ae9-9908-46a5-ad53-5e78213dfaa0" />
+<img width="722" height="410" alt="image" src="https://github.com/user-attachments/assets/ace8af07-e5dc-4b5f-aa9f-7329b649492a" />
+
+
 ## Quick start (Docker)
 1) Copy `.env.example` to `.env` inside `backend/` and fill values.
 2) `docker compose up --build`
