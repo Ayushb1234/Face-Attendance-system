@@ -1,6 +1,47 @@
-# Face Attendance (Production-Grade Skeleton)
+## 🎭 Face Attendance System (AI-Powered | FastAPI + React)
 
-Real-time face-recognition attendance with FastAPI (backend), InsightFace (ArcFace), Qdrant (vector search), Postgres (records), and a Next.js frontend.
+A production-ready real-time face attendance automation system built using **Python, OpenCV, InsightFace Embeddings & Vector Similarity Search** for identity recognition — paired with a modern **React.js frontend**.
+
+This system automatically detects faces, assigns identity labels, stores new faces, and marks attendance—including duplicate check prevention.
+
+---
+
+## 🚀 Features
+
+| Feature | Description |
+|--------|------------|
+| 🔍 Real-time face detection | Uses OpenCV + InsightFace for fast, lightweight face tracking |
+| 🧠 Face recognition | Generates embeddings & matches faces using cosine similarity |
+| ➕ Auto registration | New faces are automatically stored without manual entry |
+| 📁 Attendance storage | Saves attendance logs in CSV/Excel format |
+| 🖥️ Frontend UI | Built with React.js for live camera preview & status updates |
+| 🏗️ Scalable design | Modular ML pipeline and REST API |
+
+
+---
+
+## 🏗️ Tech Stack
+
+### **Backend**
+- FastAPI
+- Python 3.x
+- InsightFace / FaceNet embeddings
+- OpenCV
+- NumPy
+- Pandas
+- FAISS / cosine similarity search (optional)
+
+### **Frontend**
+- React.js
+- Axios
+- Webcam / MediaPipe API
+- TailwindCSS (optional)
+
+---
+
+## 📂 Project Structure
+
+
 
 Screenshots of the Project:
 --------------------------
